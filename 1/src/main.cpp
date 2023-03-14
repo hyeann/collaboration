@@ -14,6 +14,10 @@ motor_group cRight (fRight, bRight);
 
 int main() {
 
+}
+
+void competition(){
+
   cRight.spin (directionType::fwd, 50, velocityUnits::pct);
   cLeft.spin (directionType::fwd, 50, velocityUnits::pct);
   task::sleep (4000);
