@@ -12,11 +12,9 @@ motor bLeft (PORT12,true);
 motor_group cLeft (fLeft, bLeft);
 motor_group cRight (fRight, bRight);
 
-int main() {
 
-}
 
-void competition(){
+void auton(){
 
   cRight.spin (directionType::fwd, 50, velocityUnits::pct);
   cLeft.spin (directionType::fwd, 50, velocityUnits::pct);
@@ -33,4 +31,7 @@ void competition(){
   cRight.stop();
   cLeft.stop();
   
+}
+int main() {
+auton();
 }
